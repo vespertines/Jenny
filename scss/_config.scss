@@ -1,0 +1,43 @@
+@import url("https://hello.myfonts.net/count/36fe40");
+
+@font-face {
+  font-family: Univers;
+  src: url(font/Univers.woff2) format("woff2"), url(font/Univers.woff) format("woff");
+}
+
+
+body {
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Univers, Helvetica, Arial, sans-serif;
+}
+
+footer, h1, h2, h3, h4, h5, header, li, main, ol, p, span, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+footer, h1, h2, h3, h4, h5, header, li, main, ol, p, span, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
