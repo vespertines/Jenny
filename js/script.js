@@ -30,13 +30,13 @@ jQuery(document).ready(function() {
             $(this).hasClass("state")
                 ? ($(this).text("Images"),
                   $(".article--container").css({
-                      display: "table",
-                      opacity: 1
+                        display: "table",
+                        opacity: 1
                   }))
                 : ($(this).text("Read"),
                   $(".article--container").css({
-                      display: "none",
-                      opacity: 0
+                        display: "none",
+                        opacity: 0
                   }));
     });
 
