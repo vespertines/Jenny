@@ -74,7 +74,7 @@ main {
     .swiper-slide {
       width: 100%;
       height: 100%;
-      background-size: contain;
+      background-size: cover;
       background-position: 50%;
   
       .footnote {
@@ -295,13 +295,13 @@ body {
   font-size: 0;
 
   .article--container {
-    display: none;
+    display: table;
     position: absolute;
     opacity: 0;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 0;
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -382,7 +382,9 @@ body {
   }
 
   .swiper-wrapper {
+    z-index: 100;
     transition: ease;
+    background-color: #fff;
   }
 
   .swiper-container {
@@ -450,6 +452,18 @@ body {
     line-height: 1.382;
   }
 
+  .headline a,
+  .services a,
+  .clients a,
+  .credit a,
+  .clients a,
+  .contact a,
+  .credit a,
+  .copyright a {
+    color: #353535;
+    text-decoration: none;
+  }
+
   @media only screen and (max-width: 768px) and (min-width: 376px) {
     h3,
     .headline p,
@@ -477,18 +491,6 @@ body {
     .copyright p {
       font-size: 20px;
       line-height: 1.5;
-    }
-
-    .headline a,
-    .services a,
-    .clients a,
-    .credit a,
-    .clients a,
-    .contact a,
-    .credit a,
-    .copyright a {
-      color: #353535;
-      text-decoration: none;
     }
   }
 }
