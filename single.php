@@ -47,53 +47,43 @@ $slide_10 = get_field("slide_10");
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <?php if ( $slide_1 ): ?>
-            <div class="swiper-slide">
-                <img src="<?php echo $slide_1; ?>">
+            <div class="swiper-slide" style="background-image: url(<?php echo $slide_1; ?>)">
             </div>
             <?php endif; ?>
             <?php if ( $slide_2 ): ?>
-            <div class="swiper-slide">
-                <img src="<?php echo $slide_2; ?>">
+            <div class="swiper-slide" style="background-image: url(<?php echo $slide_2; ?>)">
             </div>
             <?php endif; ?>
             <?php if ( $slide_3): ?>
-           <div class="swiper-slide">
-                <img src="<?php echo $slide_3; ?>">
+           <div class="swiper-slide" style="background-image: url(<?php echo $slide_3;  ?>)">
             </div>
             <?php endif; ?>
             <?php if ( $slide_4 ): ?>
-            <div class="swiper-slide">
-                <img src="<?php echo $slide_4; ?>">
+            <div class="swiper-slide" style="background-image: url(<?php echo $slide_4; ?>)">
             </div>
             <?php endif; ?>
             <?php if ( $slide_5 ): ?>
-            <div class="swiper-slide">
-                <img src="<?php echo $slide_5; ?>">
+            <div class="swiper-slide" style="background-image: url(<?php echo $slide_5; ?>)">
             </div>
             <?php endif; ?>
             <?php if ( $slide_6 ): ?>
-            <div class="swiper-slide">
-                <img src="<?php echo $slide_6; ?>">
+            <div class="swiper-slide" style="background-image: url(<?php echo $slide_6; ?>)">
             </div>
             <?php endif; ?>
             <?php if ( $slide_7 ): ?>
-            <div class="swiper-slide">
-                <img src="<?php echo $slide_7; ?>">
+            <div class="swiper-slide" style="background-image: url(<?php echo $slide_7; ?>)">
             </div>
             <?php endif; ?>
             <?php if ( $slide_8): ?>
-            <div class="swiper-slide">
-                <img src="<?php echo $slide_8; ?>">
+            <div class="swiper-slide" style="background-image: url(<?php echo $slide_8; ?>)">
             </div>
             <?php endif; ?>
             <?php if ( $slide_9 ): ?>
-            <div class="swiper-slide">
-                <img src="<?php echo $slide_9; ?>">
+            <div class="swiper-slide" style="background-image: url(<?php echo $slide_9; ?>)">
             </div>
             <?php endif; ?>
             <?php if ( $slide_10 ): ?>
-            <div class="swiper-slide">
-                <img src="<?php echo $slide_10; ?>">
+            <div class="swiper-slide" style="background-image: url(<?php echo $slide_10; ?>)">
             </div>
             <?php endif; ?>
         </div>
