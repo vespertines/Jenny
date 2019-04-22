@@ -7,7 +7,6 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/icon.png">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="profile" href="http://gmpg.org/xfn/11" />
