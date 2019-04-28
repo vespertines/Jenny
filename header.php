@@ -32,5 +32,8 @@
         <li class="state--about"><a href="/about">About</a></li>
         <li><a href="mailto:jennyhirons@gmail.com">Contact</a></li>
       </ul>
+      <div class="button">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/menu.svg">
+      </div>
     </nav>
   </header>

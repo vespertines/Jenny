@@ -31,6 +31,8 @@ header {
   }
   
   @media only screen and (max-width: 600px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 15px;
   }
@@ -69,60 +71,75 @@ header {
     }
 
     @media only screen and (max-width: 600px) {
-      right: 20px;
+      left: 15px;
     }
 
-    ul li {
-      display: inline-block;
-      padding: 35px 15px;
+    ul {
+      margin-top: 15px;
 
-      @media only screen and (max-width: 600px) {
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-
-      a,
-      span {
+      li {
         display: inline-block;
-        color: #9c9c9c;
-        font-size: 24px;
-        line-height: 30px;
-        text-decoration: none;
-        cursor: pointer;
-        -webkit-transition: color .5s;
-        transition: color .5s;
-        @media only screen and (max-width: 768px) {
-          font-size: 20px;
+        padding: 35px 15px;
+
+        @media only screen and (max-width: 600px) {
+          padding-left: 5px;
+          padding-right: 5px;
         }
+
+        a,
+        span {
+          display: inline-block;
+          color: #9c9c9c;
+          font-size: 24px;
+          line-height: 30px;
+          text-decoration: none;
+          cursor: pointer;
+          -webkit-transition: color .5s;
+          transition: color .5s;
+
+          @media only screen and (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+
+        a:hover,
+        span:hover {
+          color: #353535;
+        }
+
+        // ul {
+        //   display: none;
+        //   padding-left: 10px;
+
+        //   li {
+
+        //     display: inline-block;
+        //     padding-top: 0;
+        //     padding-bottom: 0;
+        //     color: #9c9c9c;
+        //     font-size: 19px;
+        //     cursor: pointer;
+
+        //     &:last-of-type {
+        //       padding-right: 0;
+        //     }
+
+        //     &.state {
+        //       color: #353535;
+        //     }
+        //   }
+        // }
       }
+    }
 
-      a:hover,
-      span:hover {
-        color: #353535;
-      }
-
-      // ul {
-      //   display: none;
-      //   padding-left: 10px;
-
-      //   li {
-          
-      //     display: inline-block;
-      //     padding-top: 0;
-      //     padding-bottom: 0;
-      //     color: #9c9c9c;
-      //     font-size: 19px;
-      //     cursor: pointer;
-
-      //     &:last-of-type {
-      //       padding-right: 0;
-      //     }
-
-      //     &.state {
-      //       color: #353535;
-      //     }
-      //   }
-      // }
+    .button {
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      z-index: 500;
+      width: 16px;
+      height: 16px;
     }
   }
 }
