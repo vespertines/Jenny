@@ -390,12 +390,14 @@ body {
     width: 50%;
     height: calc(100% - 200px);
     left: 0;
-    cursor: url(img/prev@2x.png), pointer;
+    cursor: pointer;
+    // cursor: url(img/prev@2x.png), pointer;
   }
 
   .next {
     right: 0;
-    cursor: url(img/next@2x.png), pointer;
+    cursor: pointer;
+    // cursor: url(img/next@2x.png), pointer;
   }
 
   .swiper-wrapper {
