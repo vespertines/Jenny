@@ -1,7 +1,3 @@
-body.illustration header {
-  background-color: #eee;
-}
-
 body.home header {
   background-color: transparent;
   h1 {
@@ -14,6 +10,17 @@ body.home header {
     a, span {
       color: #fff;
     }
+  }
+}
+
+body.illustration header {
+  background-color: #eee;
+}
+
+body.single header {
+  @media screen and (max-width: 600px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
