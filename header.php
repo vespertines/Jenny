@@ -15,9 +15,11 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+
   <header>
     <h1><a href="/">Jenny Hirons Studio</a></h1>
     <h2><?php the_title(); ?></h2>
+    
     <nav>
       <ul>
         <!-- <li class="state--projects">
@@ -32,8 +34,10 @@
         <li class="state--about"><a href="/about">About</a></li>
         <li><a href="mailto:jennyhirons@gmail.com">Contact</a></li>
       </ul>
+
       <div class="button">
         <img src="<?php echo get_template_directory_uri(); ?>/img/menu.svg">
       </div>
     </nav>
+
   </header>

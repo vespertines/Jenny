@@ -39,6 +39,7 @@ header {
 
   h1 {
     position: absolute;
+    z-index: 500;
 
     a {
       text-decoration: none;
@@ -75,7 +76,10 @@ header {
     }
 
     ul {
-      margin-top: 15px;
+      @media only screen and (max-width: 600px) {
+        display: none;
+        margin-top: 15px;
+      }
 
       li {
         display: inline-block;
@@ -134,12 +138,21 @@ header {
 
     .button {
       display: none;
-      position: absolute;
+      position: fixed;
       top: 20px;
-      right: 0;
-      z-index: 500;
+      right: 20px;
       width: 16px;
       height: 16px;
+      z-index: 100;
+      transition: transform 0.25s;
+
+      @media only screen and (max-width: 600px) {
+        display: block;
+      }
+
+      &.rotate {
+        transform: rotate(45deg);
+      }
     }
   }
 }

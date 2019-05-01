@@ -15,6 +15,16 @@ jQuery(document).ready(function() {
         });
     }
 
+    $(".button").click(function() {
+        if ($(this).hasClass("rotate")) {
+            $(this).removeClass("rotate");
+            $("nav ul").hide();
+        } else {
+            $(this).addClass("rotate");
+            $("nav ul").show();
+        }
+    });
+
     // $("nav ul li span").click(function () {
     //     $(".page-template-page-projects")[0] ? ($(this).hasClass("state") ? $(this).parent("li").find("ul").css({
     //         display: "none"
