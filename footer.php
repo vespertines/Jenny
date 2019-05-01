@@ -15,6 +15,9 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery/dist/jquery.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/plugins.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+    <script>
+    window.onorientationchange = function() { location.reload() };
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
