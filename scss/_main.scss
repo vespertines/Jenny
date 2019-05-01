@@ -425,32 +425,25 @@ body {
   .about--container {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
     max-width: 1200px;
-    width: 95%;
     font-size: 34px;
     line-height: 1.382;
-  }
 
-  @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    .about--container {
-      max-width: 935px;
+    @media screen and (max-width: 840px) {
+      padding-left: 30px;
+      padding-right: 30px;
     }
-  }
 
-  @media only screen and (max-width: 768px) and (min-width: 376px) {
-    .about--container {
-      max-width: 708px;
-    }
-  }
-  
-  @media only screen and (max-width: 375px) {
-    .about--container {
-      max-width: 345px;
+    @media screen and (max-width: 600px) {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
   section {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 
   h3 {
@@ -468,21 +461,13 @@ body {
   .copyright p {
     font-size: 34px;
     line-height: 1.382;
+    a {
+      color: #353535;
+      text-decoration: none;
+    }
   }
 
-  .headline a,
-  .services a,
-  .clients a,
-  .credit a,
-  .clients a,
-  .contact a,
-  .credit a,
-  .copyright a {
-    color: #353535;
-    text-decoration: none;
-  }
-
-  @media only screen and (max-width: 768px) and (min-width: 376px) {
+  @media only screen and (max-width: 840px) and (min-width: 601px) {
     h3,
     .headline p,
     .services p,
@@ -497,7 +482,7 @@ body {
     }
   }
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 600px) {
     h3,
     .headline p,
     .services p,
