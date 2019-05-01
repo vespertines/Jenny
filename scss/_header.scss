@@ -160,6 +160,26 @@ header {
       &.rotate {
         transform: rotate(45deg);
       }
+
+      img {
+        &:first-of-type {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.page-template-page-home {
+  .button {
+    img {
+      &:first-of-type {
+        display: inline-block;
+      }
+
+      &:nth-of-type(2) {
+        display: none;
+      }
     }
   }
 }

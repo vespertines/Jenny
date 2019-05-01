@@ -24,10 +24,10 @@ $slide_10 = get_field("slide_10");
     <span class="close"><a href="/projects">Close</a></span>
     <span class="next-project">
         <?php
-        if( get_adjacent_post(false, '', true) ) { 
+        if ( get_adjacent_post(false, '', true) ) { 
         previous_post_link('%link', 'Next project');
         } else { 
-        $first = new WP_Query('post_type=project&posts_per_page=1&order=ASC'); $first->the_post();
+        $first = new WP_Query('post_type=post&posts_per_page=1&order=desc'); $first->the_post();
         echo '<a href="' . get_permalink() . '">Next project</a>';
         wp_reset_query();
         }; 

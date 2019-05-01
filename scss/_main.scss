@@ -79,11 +79,17 @@ main {
   
       .footnote {
         position: absolute;
-        bottom: 20px;
-        left: 30px;
+        bottom: 30px;
+        left: 50px;
         color: #fff;
         font-size: 12px;
+
+        @media screen and (max-width: 840px) {
+          left: 30px;
+        }
+
         @media only screen and (max-width: 600px) {
+          bottom: 20px;
           left: 20px;
         }
       }

@@ -36,6 +36,7 @@
       </ul>
 
       <div class="button">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/menu_.svg">
         <img src="<?php echo get_template_directory_uri(); ?>/img/menu.svg">
       </div>
     </nav>
