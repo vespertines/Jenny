@@ -5,6 +5,9 @@
   src: url(font/Univers.woff2) format("woff2"), url(font/Univers.woff) format("woff");
 }
 
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
 body {
   font-synthesis: none;
