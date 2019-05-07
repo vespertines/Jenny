@@ -83,8 +83,9 @@ jQuery(document).ready(function() {
             });
         });
     } else {
-        $(".prev").remove();
-        $(".next").remove();
+        $(".next, .prev").click(function() {
+            window.location.href = "/projects";
+        });
     }
 
     var projectNav = $(".project-name");
