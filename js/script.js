@@ -20,10 +20,10 @@ jQuery(document).ready(function() {
     $(".button").click(function() {
         if ($(this).hasClass("rotate")) {
             $(this).removeClass("rotate");
-            $("nav ul").hide();
+            $("nav ul").fadeTo(250, 0);
         } else {
             $(this).addClass("rotate");
-            $("nav ul").show();
+            $("nav ul").fadeTo(250, 1);
         }
     });
 

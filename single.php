@@ -15,21 +15,24 @@ $slide_10 = get_field("slide_10");
 ?>
 
 <div class="project--tool">
-    <?php
-    $content = get_the_content();
-    if (empty($content)) {
-        echo '<span class="read">Read</span>';
-    } ?>
+    <? // php
+    //$content = get_the_content();
+    //if (empty($article)) {
+    //    echo '<span class="read">Read</span>';
+    // } ?>
+    <?php if ( $article ): ?>
+        <span class="read">Read</span>
+    <?php endif; ?>
     <span class="pagination"></span>
     <span class="close"><a href="/projects">Close</a></span>
     <span class="next-project">
         <?php
         if ( get_adjacent_post(false, '', true) ) { 
-        previous_post_link('%link', 'Next project');
+            previous_post_link('%link', 'Next project');
         } else { 
-        $first = new WP_Query('post_type=post&posts_per_page=1&order=desc'); $first->the_post();
-        echo '<a href="' . get_permalink() . '">Next project</a>';
-        wp_reset_query();
+            $first = new WP_Query('post_type=post&posts_per_page=1&order=desc'); $first->the_post();
+            echo '<a href="' . get_permalink() . '">Next project</a>';
+            wp_reset_query();
         }; 
         ?></span>
 </div>
