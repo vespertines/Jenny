@@ -43,6 +43,13 @@ body {
   }
 }
 
+@media (hover: none) {
+  img:hover {
+    -webkit-filter: 0;
+    filter: 0;
+  }
+}
+
 main {
   top: 0;
   position: absolute;
