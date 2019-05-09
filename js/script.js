@@ -1,5 +1,7 @@
 jQuery(document).ready(function() {
     document.addEventListener("touchstart", function() {}, true);
+
+    FastClick.attach(document.body);
     
     if ($("body").hasClass("home")) {
         var homeSwiper = new Swiper(".swiper-container", {
