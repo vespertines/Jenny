@@ -1,8 +1,13 @@
 @import url("https://hello.myfonts.net/count/36fe40");
 
 @font-face {
-  font-family: Univers;
+  font-family: "Univers";
   src: url(font/Univers.woff2) format("woff2"), url(font/Univers.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url(font/univers-regular-italic.woff) format("woff"), url(univers-regular-italic.eot) format("eot"), url(univers-regular-italic.ttf) format("ttf");
 }
 
 * {
@@ -14,7 +19,7 @@ body {
   -moz-font-feature-settings: 'kern';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Univers, Helvetica, Arial, sans-serif;
+  font-family: "Univers", Helvetica, Arial, sans-serif;
 }
 
 footer, h1, h2, h3, h4, h5, header, li, main, ol, p, span, ul {
@@ -25,6 +30,10 @@ footer, h1, h2, h3, h4, h5, header, li, main, ol, p, span, ul {
 
 h1, h2, h3, h4, h5 {
   font-weight: 400;
+}
+
+em {
+  font-family: "Italic";
 }
 
 img {
