@@ -229,8 +229,18 @@ body {
   &.illustration {
     background-color: #eee;
 
-    .project .article--container {
-      background-color: #eee;
+    .project {
+      .article--container {
+        background-color: #eee;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .project--tool {
+        .next-project {
+          background-color: #eee !important;
+        }
+      }
     }
   }
 
@@ -307,12 +317,13 @@ body {
         position: fixed;
         bottom: 30px;
         left: 0;
-        z-index: 200;
+        z-index: 2000;
         width: 100%;
         text-align: center;
 
         @media only screen and (max-width: 600px) {
-          bottom: 5px;
+          bottom: 0;
+          background-color: #ffffff;
         }
 
         a {
